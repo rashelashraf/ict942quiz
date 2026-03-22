@@ -1078,109 +1078,206 @@
         }
     ]
 },
+
             2: {
-                title: "Week 2: Planning for Organizational Readiness",
-                subtitle: "Planning for Organizational Readiness",
-                questions: [
-                    {
-                        id: 1,
-                        type: "multiple",
-                        question: "Which of the following are elements required to begin the Contingency Planning (CP) process? (Select all that apply)",
-                        options: [
-                            "Contingency Planning Management Team (CPMT)",
-                            "Business Impact Analysis (BIA)",
-                            "Marketing Strategy Plan",
-                            "Planning methodology",
-                            "Access to financial resources"
-                        ],
-                        correct: [0, 1, 3, 4]
-                    },
-                    {
-                        id: 2,
-                        type: "single",
-                        question: "Which team is primarily responsible for managing and conducting the overall CP process?",
-                        options: [
-                            "Risk Management (RM) Team",
-                            "Contingency Planning Management Team (CPMT)",
-                            "IT Help Desk",
-                            "External Auditor"
-                        ],
-                        correct: 1
-                    },
-                    {
-                        id: 3,
-                        type: "truefalse",
-                        question: "The purpose of the CP policy is to define the scope of CP operations and establish managerial intent.",
-                        correct: true
-                    },
-                    {
-                        id: 4,
-                        type: "fillblank",
-                        question: "The __________ is an investigation and assessment of the impact that various events or incidents can have on the organization.",
-                        correct: ["Business Impact Analysis", "BIA", "business impact analysis"]
-                    },
-                    {
-                        id: 5,
-                        type: "multiple",
-                        question: "Which of the following are stages of the CPMT’s Business Impact Analysis (BIA)? (Select all that apply)",
-                        options: [
-                            "Assessing mission/business processes and recovery criticality",
-                            "Identifying resource requirements",
-                            "Designing firewall rules",
-                            "Identifying recovery priorities"
-                        ],
-                        correct: [0, 1, 3]
-                    },
-                    {
-                        id: 6,
-                        type: "fillblank",
-                        question: "In weighted ranking of business processes, the sum of all criterion weights must equal __________.",
-                        correct: ["1.0", "1"]
-                    },
-                    {
-                        id: 7,
-                        type: "single",
-                        question: "If an online banking system crashes at 10:00 AM and must be restored by 2:00 PM, this requirement defines which metric?",
-                        options: [
-                            "Recovery Point Objective (RPO)",
-                            "Recovery Time Objective (RTO)",
-                            "Work Recovery Time (WRT)",
-                            "Business Impact Analysis (BIA)"
-                        ],
-                        correct: 1
-                    },
-                    {
-                        id: 8,
-                        type: "single",
-                        question: "Which downtime metric defines how long a system can be unavailable before serious business damage occurs?",
-                        options: [
-                            "Recovery Time Objective (RTO)",
-                            "Recovery Point Objective (RPO)",
-                            "Maximum Tolerable Downtime (MTD)",
-                            "Work Recovery Time (WRT)"
-                        ],
-                        correct: 2
-                    },
-                    {
-                        id: 9,
-                        type: "truefalse",
-                        question: "RTO must be shorter than MTD to avoid exceeding maximum tolerable downtime.",
-                        correct: true
-                    },
-                    {
-                        id: 10,
-                        type: "single",
-                        question: "According to the slides, what is the number one budgetary expense for Disaster Recovery (DR)?",
-                        options: [
-                            "Employee overtime",
-                            "Insurance",
-                            "Hardware redundancy",
-                            "Staff training"
-                        ],
-                        correct: 1
-                    }
-                    ]
-                },
+    title: "Week 2: Security Theories, Cloud Security, and Research Writing",
+    subtitle: "Realism, Copenhagen School, Risk Management, Cloud Security, Citation Styles, and Research Paper Sections",
+    questions: [
+        {
+            id: 1,
+            type: "fillblank",
+            question: "__________ emphasizes the importance of power dynamics among states as the primary concern in international relations.",
+            correct: ["Realism", "realism"]
+        },
+        {
+            id: 2,
+            type: "single",
+            question: "Who developed the Copenhagen School?",
+            options: [
+                "Hans Morgenthau",
+                "Barry Buzan",
+                "E.H. Carr",
+                "Kenneth Waltz"
+            ],
+            correct: 1
+        },
+        {
+            id: 3,
+            type: "truefalse",
+            question: "The Copenhagen School emphasizes a more comprehensive view of security, introducing the concept of securitization.",
+            correct: true
+        },
+        {
+            id: 4,
+            type: "single",
+            question: "How many sectors are included in the Copenhagen School?",
+            options: [
+                "4",
+                "3",
+                "6",
+                "5"
+            ],
+            correct: 4
+        },
+        {
+            id: 5,
+            type: "single",
+            question: "Which sector in the Copenhagen School involves issues surrounding governance, stability, diplomacy, and power dynamics?",
+            options: [
+                "Military",
+                "Societal",
+                "Political",
+                "Economic"
+            ],
+            correct: 2
+        },
+        {
+            id: 6,
+            type: "fillblank",
+            question: "__________ refers to the process of identifying, assessing, prioritizing, and mitigating risks within an organization or any context where uncertainty or potential hazards exist.",
+            correct: ["Risk management", "risk management"]
+        },
+        {
+            id: 7,
+            type: "single",
+            question: "Which of the following component is missing from the figure below?",
+            options: [
+                "Assess",
+                "Security",
+                "Verification"
+            ],
+            correct: null
+        },
+        {
+            id: 8,
+            type: "fillblank",
+            question: "__________ aims to ensure the confidentiality, integrity, and availability of resources stored in or accessed through cloud services.",
+            correct: ["Cloud security", "cloud security"]
+        },
+        {
+            id: 9,
+            type: "single",
+            question: "For cloud security in insurance, how many layers have to be addressed to protect an organization?",
+            options: [
+                "5",
+                "7",
+                "6",
+                "4"
+            ],
+            correct: 0
+        },
+        {
+            id: 10,
+            type: "single",
+            question: "Which of the following is NOT mentioned as a mechanism for securing the data layer?",
+            options: [
+                "Encrypting data at rest and in transit",
+                "Using secure transit methods like VPNs",
+                "Implementing multi-factor authentication for user access",
+                "Controlling secrets like security keys"
+            ],
+            correct: 2
+        },
+        {
+            id: 11,
+            type: "fillblank",
+            question: "In application layered defense against cybersecurity risks, securing the applications depends on addressing three critical areas: access control, __________, and monitoring.",
+            correct: ["vulnerability management", "Vulnerability management"]
+        },
+        {
+            id: 12,
+            type: "single",
+            question: "Which layer ensures that the internet provider supplies robust modern infrastructure solutions, security mechanisms, and breach remediation, including AI-enabled detection?",
+            options: [
+                "Host Network Layer",
+                "Data Layer",
+                "Enterprise (Internal) Network",
+                "Perimeter Layer"
+            ],
+            correct: 3
+        },
+        {
+            id: 13,
+            type: "truefalse",
+            question: "Enterprise (Internal) Network refers to the boundary or boundary defenses that separate an organization's internal network from external networks or the internet.",
+            correct: false
+        },
+        {
+            id: 14,
+            type: "fillblank",
+            question: "Zero-trust is a __________ method where nothing and no one is given access until an advanced verification process is completed.",
+            correct: ["software-defined", "Software-defined", "software defined", "Software defined"]
+        },
+        {
+            id: 15,
+            type: "single",
+            question: "Which citation style is used by Education, Psychology, and Sciences?",
+            options: [
+                "APA (American Psychological Association)",
+                "Chicago/Turabian",
+                "MLA"
+            ],
+            correct: 0
+        },
+        {
+            id: 16,
+            type: "truefalse",
+            question: "Chicago/Turabian citation style is generally used by Business, History, and the Fine Arts.",
+            correct: true
+        },
+        {
+            id: 17,
+            type: "single",
+            question: "What type of article is cited with this citation style?",
+            options: [
+                "Conference",
+                "Journal",
+                "Website"
+            ],
+            correct: null
+        },
+        {
+            id: 18,
+            type: "single",
+            question: "What should be the maximum word count for an abstract?",
+            options: [
+                "350",
+                "300",
+                "250",
+                "200"
+            ],
+            correct: 2
+        },
+        {
+            id: 19,
+            type: "single",
+            question: "Can you use past tense when stating results or observations in the abstract section?",
+            options: [
+                "Yes",
+                "No"
+            ],
+            correct: 0
+        },
+        {
+            id: 20,
+            type: "fillblank",
+            question: "__________ is usually in present tense since you are presenting facts and background information on your research topic.",
+            correct: ["The introduction", "Introduction", "the introduction", "introduction"]
+        },
+        {
+            id: 21,
+            type: "fillblank",
+            question: "__________ delineates the precise methods and procedures utilized in the study, providing detailed insights into data collection, analysis, interpretation, and the tools or instruments used, ensuring the potential for replication of the research.",
+            correct: ["The methodology", "Methodology", "the methodology", "methodology"]
+        },
+        {
+            id: 22,
+            type: "fillblank",
+            question: "__________ of a research paper serves to summarize the key points and findings of the study.",
+            correct: ["The conclusion", "Conclusion", "the conclusion", "conclusion"]
+        }
+    ]
+},
             3: {
                 title: "Week 3: Risk Evaluation",
                 subtitle: "Assessing likelihood and severity",
